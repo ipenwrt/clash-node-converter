@@ -31,7 +31,7 @@ def is_base64_content(content):
 
 def get_today_date_str():
     """生成 %y%m%d 格式日期字符串（UTC）"""
-    today = datetime.now(timezone.UTC).date()
+    today = datetime.now(timezone.utc).date()
     return today.strftime('%y%m%d')  # 如 '251029'
 
 def fetch_sources_from_base(base_url, max_retries=2):
@@ -45,7 +45,7 @@ def fetch_sources_from_base(base_url, max_retries=2):
             full_url = base_url  # 直接抓取固定文件
             date_info = "fixed"
         else:
-            target_date = datetime.now(timezone.UTC).date() - timedelta(days=date_offset)
+            target_date = datetime.now(timezone.utc).date() - timedelta(days=date_offset)
             date_str = target_date.strftime('%y%m%d')
             full_url = f"{base_url.rstrip('/')}/{date_str}.txt"  # 动态拼接
             date_info = f"{date_str}: {target_date}"
