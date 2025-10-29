@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-节点转换脚本：动态抓取当天源 TXT，解析为 Clash YAML。
-支持：vmess, vless, hysteria2。
+节点转换脚本：动态抓取源 TXT → 解析 proxies → base64 编码。
+支持 Sub-Store + rename.js + skywrt-simple.ini 生成完整订阅。
 用法：python converter.py
-输出：output/clash-sub.yaml
+输出：output/proxies.b64 (订阅源) + example-full.yaml (测试用)
 """
 
 import base64
@@ -16,12 +16,12 @@ from urllib.parse import urlparse, parse_qs
 from datetime import datetime, timedelta
 import os
 
-BASE_URL_FILE = 'sources/base-url.txt'
+BASE_URL_FILE = 'sources/base-url.txt'  # 历史：https://raw.githubusercontent.com/wrtv/combination/refs/heads/main/sub/2510/
 
 def get_today_date_str():
     """生成 YYYYMMDD 格式日期字符串（UTC）"""
     today = datetime.utcnow().date()
-    return today.strftime('%y%m%d')  # 如 '251029' (25=2025, 10=月, 29=日)
+    return today.strftime('%y%m%d')  # 如 '251029'
 
 def fetch_sources(max_retries=2):
     """动态抓取源文件：尝试当天 → 前一天"""
@@ -35,7 +35,7 @@ def fetch_sources(max_retries=2):
     date_offset = 0
     while date_offset <= max_retries:
         target_date = datetime.utcnow().date() - timedelta(days=date_offset)
-        date_str = target_date.strftime('%y%m%d')  # YYYYMMDD 缩写
+        date_str = target_date.strftime('%y%m%d')
         full_url = f"{base_url}{date_str}.txt"
         
         try:
@@ -46,7 +46,7 @@ def fetch_sources(max_retries=2):
                 if links:
                     all_links.extend(links)
                     print(f"成功抓取 {len(links)} 个链接 (日期: {target_date})")
-                    break  # 成功后停止
+                    break
                 else:
                     print(f"文件为空，尝试前一天")
         except Exception as e:
@@ -60,16 +60,12 @@ def fetch_sources(max_retries=2):
     return all_links
 
 def parse_vmess(link):
-    """解析 vmess:// base64 JSON"""
+    """解析 vmess:// base64 JSON"""  # 历史逻辑，无变
     try:
-        # 提取 base64 部分
         base64_part = link.split('://')[1]
         decoded = base64.b64decode(base64_part).decode('utf-8')
         config = json.loads(decoded)
-        
-        # 提取 ps (name)，支持 Unicode
         name = config.get('ps', 'Unnamed VMess')
-        
         return {
             'name': name,
             'type': 'vmess',
@@ -88,16 +84,14 @@ def parse_vmess(link):
         return None
 
 def parse_vless(link):
-    """解析 vless:// URL"""
+    """解析 vless:// URL"""  # 历史逻辑 + path 修正
     try:
         parsed = urlparse(link)
         params = parse_qs(parsed.query)
-        
         name = parsed.fragment or 'Unnamed VLESS'
         server = parsed.hostname
         port = int(parsed.port or 443)
         uuid = parsed.path.strip('/')
-        
         proxy = {
             'name': name,
             'type': 'vless',
@@ -112,86 +106,78 @@ def parse_vless(link):
             'servername': params.get('sni', [server])[0],
             'ws-opts': None
         }
-        
-        # WS 选项
         if proxy['network'] == 'ws':
             path = params.get('path', ['/'])[0]
-            # 修正历史问题：如果 path 末尾有误参数，截取到 ?
             if '?' in path:
-                path = path.split('?')[0]
+                path = path.split('?')[0]  # 历史修正
             proxy['ws-opts'] = {
                 'path': path,
                 'headers': {'Host': params.get('host', [server])[0]}
             }
-        
         return proxy
     except Exception as e:
         print(f"VLESS 解析失败: {link[:50]}... 错误: {e}")
         return None
 
 def parse_hysteria2(link):
-    """解析 hysteria2:// URL"""
+    """解析 hysteria2:// URL"""  # 历史逻辑 + unquote 解码
     try:
         parsed = urlparse(link)
         params = parse_qs(parsed.query)
-        
-        # hysteria2 格式: hysteria2://password@server:port?params#name
         auth = parsed.path.split('@')
         if len(auth) != 2:
             raise ValueError("无效 hysteria2 格式")
         password, server_port = auth
         server, port_str = server_port.rsplit(':', 1)
         port = int(port_str)
-        
         name = parsed.fragment or 'Unnamed Hysteria2'
-        
         proxy = {
             'name': name,
             'type': 'hysteria2',
             'server': server,
             'port': port,
-            'password': urllib.parse.unquote(password),  # 解码 %3E 等
+            'password': urllib.parse.unquote(password),
             'sni': params.get('sni', [''])[0],
             'insecure': params.get('insecure', ['0'])[0] == '1',
             'obfs': params.get('obfs', [''])[0],
-            'obfs-password': urllib.parse.unquote(params.get('obfs-password', [''])[0])  # 解码特殊字符
+            'obfs-password': urllib.parse.unquote(params.get('obfs-password', [''])[0])
         }
-        
         return proxy
     except Exception as e:
         print(f"Hysteria2 解析失败: {link[:50]}... 错误: {e}")
         return None
 
-def generate_yaml(proxies):
-    """生成 Clash YAML"""
-    if not proxies:
-        return {}
+def generate_proxies_yaml(proxies):
+    """生成 proxies YAML 字符串（用于 base64）"""
+    config = {'proxies': proxies}
+    yaml_str = yaml.dump(config, allow_unicode=True, default_flow_style=False, indent=2, sort_keys=False)
+    return yaml_str
+
+def generate_example_full_yaml(proxies, ini_path='configs/skywrt-simple.ini'):
+    """模拟生成完整 YAML（测试用；实际用 Sub-Store）"""
+    # 简单读取 ini 规则（实际 Sub-Store 会解析 ini 生成 rules/proxy-groups）
+    rules = []
+    proxy_groups = [
+        {'name': '🚀 所有-手动', 'type': 'select', 'proxies': [p['name'] for p in proxies] + ['DIRECT', 'REJECT']},
+        {'name': '♻️ 所有-自动', 'type': 'url-test', 'proxies': [p['name'] for p in proxies], 'url': 'http://www.gstatic.com/generate_204', 'interval': 180}
+    ]
+    # 从 ini 提取示例规则（简化；完整用 Sub-Store）
+    if os.path.exists(ini_path):
+        with open(ini_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                if line.startswith('ruleset='):
+                    rules.append(line.strip())  # 占位
+    rules.append('- MATCH,♻️ 所有-自动')
     
-    # 基本结构（添加健康检查组）
-    config = {
+    full_config = {
         'proxies': proxies,
-        'proxy-groups': [
-            {
-                'name': '🚀 节点选择',
-                'type': 'select',
-                'proxies': [p['name'] for p in proxies]
-            },
-            {
-                'name': '🔗 主代理 (自动测试)',
-                'type': 'url-test',
-                'proxies': [p['name'] for p in proxies],
-                'url': 'http://www.gstatic.com/generate_204',
-                'interval': 300,
-                'tolerance': 50
-            }
+        'proxy-groups': proxy_groups + [  # 添加节点组示例
+            {'name': '🇺🇸 美国-自动', 'type': 'url-test', 'proxies': [p['name'] for p in proxies if 'US' in p['name']], 'url': 'http://www.gstatic.com/generate_204', 'interval': 180}
+            # ... 其他组从 ini
         ],
-        'rules': [
-            'DOMAIN-SUFFIX,google.com,🚀 节点选择',
-            'GEOIP,CN,DIRECT',
-            'MATCH,🔗 主代理 (自动测试)'
-        ]
+        'rules': rules
     }
-    return config
+    return full_config
 
 def main():
     """主函数"""
@@ -215,14 +201,21 @@ def main():
     
     print(f"成功解析 {len(proxies)} 个节点")
     
-    config = generate_yaml(proxies)
-    
     os.makedirs('output', exist_ok=True)
-    output_file = 'output/clash-sub.yaml'
-    with open(output_file, 'w', encoding='utf-8') as f:
-        yaml.dump(config, f, allow_unicode=True, default_flow_style=False, indent=2)
     
-    print(f"YAML 生成完成: {output_file} (订阅 URL: https://raw.githubusercontent.com/你的用户名/clash-node-converter/main/{output_file})")
+    # 1. 生成 base64 proxies（核心输出）
+    proxies_yaml = generate_proxies_yaml(proxies)
+    b64_proxies = base64.b64encode(proxies_yaml.encode('utf-8')).decode('utf-8')
+    with open('output/proxies.b64', 'w', encoding='utf-8') as f:
+        f.write(b64_proxies)
+    print("Base64 生成完成: output/proxies.b64")
+    print(f"订阅源 URL: https://raw.githubusercontent.com/你的用户名/clash-node-converter/main/output/proxies.b64")
+    
+    # 2. 示例完整 YAML（本地测试；Actions 可选生成）
+    full_config = generate_example_full_yaml(proxies)
+    with open('output/example-full.yaml', 'w', encoding='utf-8') as f:
+        yaml.dump(full_config, f, allow_unicode=True, default_flow_style=False, indent=2)
+    print("示例完整 YAML 生成: output/example-full.yaml")
 
 if __name__ == '__main__':
     main()
