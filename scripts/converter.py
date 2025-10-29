@@ -5,6 +5,7 @@
 支持动态日期子目录。
 用法：python converter.py
 输出：output/links.b64
+未来扩展：clash.yaml 源 → yaml.load 转 proxies → 链接 base64。
 """
 
 import base64
@@ -46,36 +47,39 @@ def get_target_date(base_url, date_offset=0):
     return date_str, target_dt.date(), tz_name
 
 def fetch_sources_from_base(base_url, max_retries=2):
-    """从单个基 URL 抓取源文件：支持固定 .txt/文件、动态日期子目录 + Base64 自动解码 + 时区优化"""
-    # 判断是否动态目录（wrtv sub/25XX/）
-    is_dynamic_dir = 'sub/25' in base_url  # 匹配 2509/2510/ 等
-    is_fixed = base_url.endswith('.txt') or not is_dynamic_dir  # .txt 或非动态 = 固定
-    
+    """从单个基 URL 抓取源文件：URL 日期子目录动态 + 固定源 Base64/TXT 优先 + 时区优化"""
+    # 判断是否动态日期子目录（含 'sub/25' 日期格式）
+    is_dynamic_dir = 'sub/25' in base_url  # 匹配 2509/2510/ 等日期目录
     all_links = []
     date_offset = 0
     while date_offset <= max_retries:
-        if is_fixed:
-            full_url = base_url  # 直接抓取固定文件/URL
-            date_str, target_date, tz_name = 'fixed', 'fixed', 'fixed'
-            date_info = "fixed"
-            print(f"  固定源: 直接抓取 {full_url}")
-        else:  # 动态目录
+        if is_dynamic_dir:
             date_str, target_date, tz_name = get_target_date(base_url, date_offset)
             full_url = f"{base_url.rstrip('/')}/{date_str}.txt"  # 动态拼接
             date_info = f"{date_str}: {target_date} ({tz_name})"
+        else:  # 固定源（无日期格式）
+            full_url = base_url  # 直接抓取原 URL
+            date_info = "fixed"
+            print(f"  固定源: 优先 Base64/TXT 检查 {full_url}")
+            # 未来扩展：yaml 处理（e.g., if base_url.endswith('.yaml'): yaml.load(content) → proxies → links）
         
         try:
             print(f"  尝试抓取: {full_url}")
             with urllib.request.urlopen(full_url, timeout=10) as response:
                 content = response.read().decode('utf-8')
-                # Base64 检测 & 解码
+                # 优先 Base64 检测 & 解码（固定源或动态内容）
+                decoded = False
                 if is_base64_content(content):
                     try:
                         decoded_bytes = base64.b64decode(content.strip())
                         content = decoded_bytes.decode('utf-8')
                         print(f"  Base64 解码成功 ({date_info})")
+                        decoded = True
                     except Exception as decode_e:
                         print(f"  Base64 解码失败: {decode_e}，按 plain TXT 处理")
+                
+                if not decoded:
+                    print(f"  直接 TXT 处理 ({date_info})")
                 
                 # 过滤有效协议链接（支持常见 Clash 协议）
                 valid_protocols = ('vmess://', 'vless://', 'hysteria2://', 'ss://', 'trojan://')
