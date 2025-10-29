@@ -1,0 +1,2320 @@
+proxies:
+- alterId: 64
+  cipher: auto
+  name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 3
+  network: tcp
+  port: 50002
+  server: 39.100.81.215
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_34'
+  network: ws
+  port: 2053
+  server: 89.116.180.130
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0019
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- alterId: 0
+  cipher: auto
+  name: 香港 特别行政区
+  network: tcp
+  port: 59516
+  server: 43.247.134.213
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
+  ws-opts: null
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  name: JP_speednode_0013
+  network: tcp
+  port: 443
+  server: 178.130.47.106
+  servername: apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港3|@ripaojiedian
+  network: tcp
+  port: 59516
+  server: 43.247.134.213
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: HK_speednode_0008
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@èŠ‚ç‚¹ç‹‚é­”/
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0029
+  network: ws
+  port: 8443
+  server: 5.42.220.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CKR_speednode_0015
+  network: ws
+  port: 12312
+  server: 211.48.77.114
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tls
+- alterId: 0
+  cipher: auto
+  name: 美国 - 波特蘭 - Amazon.com, Inc. - 5
+  network: ws
+  port: 80
+  server: 44.232.99.217
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4e596cf4-5fb1-4138-ea05-badfba564d54
+  ws-opts: {}
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CKR_speednode_0016
+  network: ws
+  port: 443
+  server: 147.75.225.105
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- alterId: 0
+  cipher: auto
+  name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 13
+  network: ws
+  port: 46433
+  server: 8.218.152.97
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4648e017-a18f-48b6-a570-1bfe61fc3825
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 中国 - 青岛市 - Hangzhou Alibaba Advertising Co - 1
+  network: tcp
+  port: 50002
+  server: 139.129.20.6
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CUS_speednode_0035
+  network: ws
+  port: 2096
+  server: 104.19.50.238
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /telegramU0001F1E8U0001F1F3@wangcai2/
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B7%F0%9F%87%BA_RU_%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6_10'
+  network: ws
+  port: 2087
+  server: 185.176.24.140
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 - El Dorado Springs - Internet Numbers Authority - 21
+  network: ws
+  port: 20522
+  server: 38.34.24.196
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f65ae5d8-f779-4ab2-8ba3-e4d46d34ef9d
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 中国 - 上海 - Hangzhou Alibaba Advertising Co - 8
+  network: tcp
+  port: 50002
+  server: 106.14.75.114
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 9
+  network: none
+  port: 42994
+  server: 8.210.215.228
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4d4697fe-43eb-4649-dcdc-191a3f9a32e4
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0023
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³ @WangCai2 /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_37'
+  network: ws
+  port: 443
+  server: 27.50.48.222
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: KR_speednode_0015
+  network: ws
+  port: 12312
+  server: 211.48.77.114
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CTW_speednode_0032
+  network: ws
+  port: 443
+  server: 167.179.27.92
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_20'
+  network: ws
+  port: 2087
+  server: 140.99.233.156
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CHK_speednode_0009
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0020
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/
+- alterId: 2
+  cipher: auto
+  name: 中国 V2CROSS.COM
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 美国 - 波特蘭 - Amazon.com, Inc. - 1
+  network: none
+  port: 50038
+  server: 44.232.99.217
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 1458449f-a406-4b38-cca7-b7d44a50022f
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0024
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_28'
+  network: ws
+  port: 443
+  server: 170.114.45.25
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 - 里士满 - Alibaba Cloud LLC - 3
+  network: none
+  port: 37267
+  server: 47.253.185.243
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4948cb85-668a-420e-d109-5d4b3aabe54c
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_25'
+  network: ws
+  port: 8443
+  server: 94.247.142.245
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 新加坡 - 新加坡 - SGP VULTR - 6
+  network: none
+  port: 57540
+  server: 66.42.63.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8155e379-745b-409b-9cfe-74c4aee4c078
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CHK_speednode_0010
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@èŠ‚ç‚¹ç‹‚é­”security=tlssecurity=tls
+- alterId: 64
+  cipher: auto
+  name: 中国 - 北京 - Hangzhou Alibaba Advertising Co - 7
+  network: tcp
+  port: 30302
+  server: 39.107.155.11
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0027
+  network: ws
+  port: 8443
+  server: 5.42.220.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tls
+- alterId: 2
+  cipher: auto
+  name: 香港7|@ripaojiedian
+  network: ws
+  port: 80
+  server: 9438890c-t4whs0-t6blpv-1ldl3.hk.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: fd224a6c-addc-11ed-a8bf-f23c91cfbbc9
+  ws-opts: {}
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CHK_speednode_0006
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0018
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /freecodes@èŠ‚ç‚¹ç‹‚é­”/
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0022
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /XU0001F1E8U0001F1F3@èŠ‚ç‚¹ç‹‚é­”/
+- alterId: 0
+  cipher: auto
+  name: 香港 Cloudie数据中心
+  network: tcp
+  port: 8080
+  server: 103.243.26.209
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: bc7e6840-ab83-4570-eaae-d9aff1e2da09
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 新加坡 - 新加坡 - SGP VULTR - 8
+  network: none
+  port: 30993
+  server: 66.42.63.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d34dc85d-89c0-4bef-e428-aee76a9adacf
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_6'
+  network: ws
+  port: 2053
+  server: 91.193.58.119
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CTW_speednode_0033
+  network: ws
+  port: 443
+  server: 167.179.27.92
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/
+- alterId: 0
+  cipher: auto
+  name: 香港6|@ripaojiedian
+  network: tcp
+  port: 54804
+  server: 43.247.135.64
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4f8db425-47ac-420e-b2d7-6e85bbc25562
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_11'
+  network: ws
+  port: 2053
+  server: 91.193.59.37
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 中国 - 香港 - Alibaba.com LLC - 10
+  network: none
+  port: 2998
+  server: 47.83.240.134
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 661638ea-954a-4950-a7e8-b3122b516856
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_17'
+  network: ws
+  port: 2053
+  server: 94.242.231.244
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_12'
+  network: ws
+  port: 2053
+  server: 94.242.230.56
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 - 里士满 - Alibaba Cloud LLC - 4
+  network: none
+  port: 23755
+  server: 47.253.185.243
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b6d7a60b-b1e9-4513-8aec-d0b886ae4c37
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%A7%F0%9F%87%AC_BG_%E4%BF%9D%E5%8A%A0%E5%88%A9%E4%BA%9A_16'
+  network: ws
+  port: 2096
+  server: 147.78.140.193
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 64
+  cipher: auto
+  name: 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 4
+  network: tcp
+  port: 50002
+  server: 120.26.137.112
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%A7%F0%9F%87%AC_BG_%E4%BF%9D%E5%8A%A0%E5%88%A9%E4%BA%9A_22'
+  network: ws
+  port: 443
+  server: 147.78.140.5
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 香港3|@ripaojiedian
+  network: tcp
+  port: 59516
+  server: 43.247.134.213
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 2906e19e-c99f-456e-bcb3-c5472fd594e5
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD_38'
+  network: ws
+  port: 2053
+  server: 103.184.44.62
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: HK_speednode_0012
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_7'
+  network: ws
+  port: 443
+  server: 27.50.49.13
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_21'
+  network: ws
+  port: 8443
+  server: 45.159.218.162
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: US_speednode_0036
+  network: ws
+  port: 2096
+  server: 195.13.45.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0017
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /
+- alterId: 0
+  cipher: auto
+  name: 12|香港6|@ripaojiedian
+  network: tcp
+  port: 54804
+  server: 43.247.135.64
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4f8db425-47ac-420e-b2d7-6e85bbc25562
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: KR_speednode_0016
+  network: ws
+  port: 443
+  server: 147.75.225.105
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4'
+  network: ws
+  port: 2083
+  server: 216.205.52.109
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 新加坡 - 新加坡 - SGP VULTR - 2
+  network: none
+  port: 27555
+  server: 66.42.63.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 852b7a0d-7817-4473-9473-546080ce951e
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%AA%F0%9F%87%B8_ES_%E8%A5%BF%E7%8F%AD%E7%89%99_1'
+  network: ws
+  port: 443
+  server: 185.238.228.212
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_19'
+  network: ws
+  port: 2096
+  server: 91.193.59.37
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 - 洛杉矶 - Apple Network, LLC - 19
+  network: ws
+  port: 443
+  server: xcf056-1.facai2024.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ead690c8-ba41-43be-bceb-bcbf714ceb11
+  ws-opts: {}
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_29'
+  network: ws
+  port: 2053
+  server: 216.116.134.43
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 11,12|香港|@ripaojiedian
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts: {}
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_3'
+  network: ws
+  port: 8443
+  server: 185.148.105.225
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CKR_speednode_0014
+  network: ws
+  port: 50003
+  server: 175.211.35.161
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@èŠ‚ç‚¹ç‹‚é­”/
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0021
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/
+- client-fingerprint: ''
+  flow: ''
+  name: SG_speednode_0031
+  network: ws
+  port: 443
+  server: 185.114.78.230
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0025
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /XU0001F1E8U0001F1F3@èŠ‚ç‚¹ç‹‚é­”security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_5'
+  network: ws
+  port: 443
+  server: 45.133.247.14
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: HK_speednode_0006
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CSG_speednode_0030
+  network: ws
+  port: 443
+  server: 185.114.78.230
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_32'
+  network: ws
+  port: 8443
+  server: 167.68.5.90
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_13'
+  network: ws
+  port: 2083
+  server: 94.242.229.9
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0028
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /XU0001F1E8U0001F1F3@èŠ‚ç‚¹ç‹‚é­”security=tls
+- alterId: 0
+  cipher: auto
+  name: 11|🇭🇰 香港6|@ripaojiedian
+  network: tcp
+  port: 54804
+  server: 43.247.135.64
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4f8db425-47ac-420e-b2d7-6e85bbc25562
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 美国 - 西雅圖 - GTHost - 2
+  network: none
+  port: 19365
+  server: 2.59.62.63
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9583a647-b0ba-47b0-d4b0-4e12a0201d67
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: HK_speednode_0010
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@èŠ‚ç‚¹ç‹‚é­”security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: SG_speednode_0030
+  network: ws
+  port: 443
+  server: 185.114.78.230
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: TW_speednode_0033
+  network: ws
+  port: 443
+  server: 167.179.27.92
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0019
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- alterId: 0
+  cipher: auto
+  name: 日本 东京Amazon数据中心
+  network: tcp
+  port: 23211
+  server: tls.19.node-for-bigairport.win
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_31'
+  network: ws
+  port: 2096
+  server: 188.42.145.159
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_9'
+  network: ws
+  port: 8443
+  server: 188.42.145.159
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 日本 - 东京 - Amazon Technologies Inc. - 1
+  network: tcp
+  port: 22211
+  server: tls.06.node-for-bigairport.win
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_14'
+  network: ws
+  port: 2096
+  server: 14.102.228.210
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 5
+  network: none
+  port: 15160
+  server: 8.218.120.209
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 540a9fd9-9dc8-434f-c971-a10e9befd7fa
+  ws-opts: null
+- alterId: 2
+  cipher: auto
+  name: 香港|@ripaojiedian
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts: {}
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_35'
+  network: ws
+  port: 443
+  server: 199.181.197.39
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CHK_speednode_0011
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@èŠ‚ç‚¹ç‹‚é­”security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_18'
+  network: ws
+  port: 8443
+  server: 89.116.161.250
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 新加坡 - 新加坡 - SGP VULTR - 3
+  network: none
+  port: 30183
+  server: 66.42.63.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: e10bd225-b2e3-4e23-9732-e7da9cd6b995
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CHK_speednode_0012
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0027
+  network: ws
+  port: 8443
+  server: 5.42.220.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0017
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0026
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CUS_speednode_0036
+  network: ws
+  port: 2096
+  server: 195.13.45.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0020
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%BA%F0%9F%87%A6_UA_%E4%B9%8C%E5%85%8B%E5%85%B0_15'
+  network: ws
+  port: 2096
+  server: 45.80.111.38
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B0%F0%9F%87%BF_KZ_%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6_36'
+  network: ws
+  port: 2087
+  server: 185.176.26.61
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0025
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /XU0001F1E8U0001F1F3@èŠ‚ç‚¹ç‹‚é­”security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CUS_speednode_0037
+  network: ws
+  port: 2096
+  server: 195.13.45.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0023
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³ @WangCai2 /
+- client-fingerprint: ''
+  flow: ''
+  name: KR_speednode_0014
+  network: ws
+  port: 50003
+  server: 175.211.35.161
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@èŠ‚ç‚¹ç‹‚é­”/
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0021
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /Telegram@freecodes/
+- alterId: 0
+  cipher: auto
+  name: 中国 - 广州市 - Shenzhen Tencent Computer Systems Company Limited - 2
+  network: ws
+  port: 11399
+  server: 119.29.98.43
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4d53cd6c-31f5-4b3b-bb11-fb012c8d9648
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 美国 - 帕萨迪纳 - Cogent Communications - 20
+  network: ws
+  port: 60931
+  server: 154.12.19.175
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d3c6bb28-18f6-43ea-8112-15e2d372d512
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 美国 - 波特蘭 - Amazon.com, Inc. - 6
+  network: none
+  port: 50037
+  server: 44.232.99.217
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 33e68b5d-6e64-4916-b3f1-84c2d174fa0a
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_24'
+  network: ws
+  port: 443
+  server: 45.133.247.151
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 新加坡5|@ripaojiedian
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 日本 - 东京 - Amazon Technologies Inc. - 2
+  network: tcp
+  port: 22211
+  server: tls.10.node-for-bigairport.win
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 新加坡 - 新加坡 - Alibaba (US) Technology Co., Ltd. - 1
+  network: http
+  port: 22525
+  server: 47.245.106.193
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cabe905a-28ea-4e7e-c34d-2fa38604001f
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: HK_speednode_0011
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@èŠ‚ç‚¹ç‹‚é­”security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0026
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%AA%F0%9F%87%B8_ES_%E8%A5%BF%E7%8F%AD%E7%89%99_8'
+  network: ws
+  port: 2053
+  server: 185.18.250.185
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_2'
+  network: ws
+  port: 8443
+  server: 27.50.49.232
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: HK_speednode_0007
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0024
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CSG_speednode_0031
+  network: ws
+  port: 443
+  server: 185.114.78.230
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/
+- client-fingerprint: ''
+  flow: ''
+  name: RU_speednode_0029
+  network: ws
+  port: 8443
+  server: 5.42.220.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0028
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /XU0001F1E8U0001F1F3@èŠ‚ç‚¹ç‹‚é­”security=tls
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%A6%F0%9F%87%AA_AE_%E9%98%BF%E8%81%94%E9%85%8B_30'
+  network: ws
+  port: 443
+  server: 94.140.0.157
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B1%F0%9F%87%B9_LT_%E7%AB%8B%E9%99%B6%E5%AE%9B_23'
+  network: ws
+  port: 443
+  server: 88.216.66.193
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,12|新加坡5|@ripaojiedian
+  network: ws
+  port: 443
+  server: cf.090227.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 290cc691-3ac6-4387-98a1-25c8eb8ca2ea
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 新加坡 - 新加坡 - SGP VULTR - 4
+  network: none
+  port: 17514
+  server: 66.42.63.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d05fd51a-936b-42f6-892f-9c62c49728b6
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: TW_speednode_0032
+  network: ws
+  port: 443
+  server: 167.179.27.92
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramðŸ‡¨ðŸ‡³@WangCai2/
+- alterId: 0
+  cipher: auto
+  name: 中国 - 香港 - Antbox Networks Limited - 11
+  network: none
+  port: 57592
+  server: 192.238.206.158
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 24654cca-84a2-4144-9ec2-edac2fe35da9
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CHK_speednode_0008
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@èŠ‚ç‚¹ç‹‚é­”/
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CHK_speednode_0007
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /X@freecodes/
+- client-fingerprint: ''
+  flow: ''
+  name: HK_speednode_0009
+  network: ws
+  port: 443
+  server: 202.85.53.74
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/
+- alterId: 64
+  cipher: auto
+  name: 中国 - 佛山市 - China Mobile - 6
+  network: tcp
+  port: 59003
+  server: 183.236.51.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0022
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /XU0001F1E8U0001F1F3@èŠ‚ç‚¹ç‹‚é­”/
+- client-fingerprint: ''
+  flow: ''
+  name: US_speednode_0037
+  network: ws
+  port: 2096
+  server: 195.13.45.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /x @èŠ‚ç‚¹ç‹‚é­”security=tlssecurity=tls
+- client-fingerprint: ''
+  flow: ''
+  name: 13%7CRU_speednode_0018
+  network: ws
+  port: 2096
+  server: 188.42.145.253
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /freecodes@èŠ‚ç‚¹ç‹‚é­”/
+- alterId: 0
+  cipher: auto
+  name: 新加坡 - 新加坡 - SGP VULTR - 5
+  network: none
+  port: 23601
+  server: 66.42.63.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 996ce5de-4dd5-4ac6-bff7-765a5e506b59
+  ws-opts: null
+- alterId: 0
+  cipher: auto
+  name: 新加坡 - 新加坡 - SGP VULTR - 7
+  network: none
+  port: 24345
+  server: 66.42.63.36
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: ebda7038-f913-42d2-8e4c-5855b64f6a1a
+  ws-opts: null
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision-udp443
+  name: 13%7CJP_speednode_0013
+  network: tcp
+  port: 443
+  server: 178.130.47.106
+  servername: apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts: null
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_27'
+  network: ws
+  port: 2053
+  server: 154.197.88.97
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 美国 - 波特蘭 - Amazon.com, Inc. - 18
+  network: ws
+  port: 20522
+  server: 44.232.99.217
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3a10ebfc-36b6-4e2e-a2f0-c3d1324c2736
+  ws-opts: {}
+- client-fingerprint: ''
+  flow: ''
+  name: US_speednode_0035
+  network: ws
+  port: 2096
+  server: 104.19.50.238
+  servername: gaosir.unfeeling.sbs
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: gaosir.unfeeling.sbs
+    path: /telegramU0001F1E8U0001F1F3@wangcai2/
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_26'
+  network: ws
+  port: 443
+  server: 94.247.142.245
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  name: '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_33'
+  network: ws
+  port: 2096
+  server: 31.22.116.134
+  servername: juzibaipiao.5112233.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ''
+  ws-opts:
+    headers:
+      Host: juzibaipiao.5112233.xyz
+    path: /
+proxy-groups:
+- name: 🚀 节点选择
+  proxies:
+  - 中国 - 北京 - Hangzhou Alibaba Advertising Co - 3
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_34'
+  - 13%7CRU_speednode_0019
+  - 香港 特别行政区
+  - JP_speednode_0013
+  - 🇭🇰 香港3|@ripaojiedian
+  - HK_speednode_0008
+  - 13%7CRU_speednode_0029
+  - 13%7CKR_speednode_0015
+  - 美国 - 波特蘭 - Amazon.com, Inc. - 5
+  - 13%7CKR_speednode_0016
+  - 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 13
+  - 中国 - 青岛市 - Hangzhou Alibaba Advertising Co - 1
+  - 13%7CUS_speednode_0035
+  - '%F0%9F%87%B7%F0%9F%87%BA_RU_%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6_10'
+  - 美国 - El Dorado Springs - Internet Numbers Authority - 21
+  - 中国 - 上海 - Hangzhou Alibaba Advertising Co - 8
+  - 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 9
+  - RU_speednode_0023
+  - '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_37'
+  - KR_speednode_0015
+  - 13%7CTW_speednode_0032
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_20'
+  - 13%7CHK_speednode_0009
+  - RU_speednode_0020
+  - 中国 V2CROSS.COM
+  - 美国 - 波特蘭 - Amazon.com, Inc. - 1
+  - RU_speednode_0024
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_28'
+  - 美国 - 里士满 - Alibaba Cloud LLC - 3
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_25'
+  - 新加坡 - 新加坡 - SGP VULTR - 6
+  - 13%7CHK_speednode_0010
+  - 中国 - 北京 - Hangzhou Alibaba Advertising Co - 7
+  - 13%7CRU_speednode_0027
+  - 香港7|@ripaojiedian
+  - 13%7CHK_speednode_0006
+  - RU_speednode_0018
+  - RU_speednode_0022
+  - 香港 Cloudie数据中心
+  - 新加坡 - 新加坡 - SGP VULTR - 8
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_6'
+  - 13%7CTW_speednode_0033
+  - 香港6|@ripaojiedian
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_11'
+  - 中国 - 香港 - Alibaba.com LLC - 10
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_17'
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_12'
+  - 美国 - 里士满 - Alibaba Cloud LLC - 4
+  - '%F0%9F%87%A7%F0%9F%87%AC_BG_%E4%BF%9D%E5%8A%A0%E5%88%A9%E4%BA%9A_16'
+  - 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 4
+  - '%F0%9F%87%A7%F0%9F%87%AC_BG_%E4%BF%9D%E5%8A%A0%E5%88%A9%E4%BA%9A_22'
+  - 香港|@ripaojiedian
+  - 香港3|@ripaojiedian
+  - '%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD_38'
+  - HK_speednode_0012
+  - '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_7'
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_21'
+  - US_speednode_0036
+  - RU_speednode_0017
+  - 12|香港6|@ripaojiedian
+  - KR_speednode_0016
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4'
+  - 新加坡 - 新加坡 - SGP VULTR - 2
+  - '%F0%9F%87%AA%F0%9F%87%B8_ES_%E8%A5%BF%E7%8F%AD%E7%89%99_1'
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_19'
+  - 美国 - 洛杉矶 - Apple Network, LLC - 19
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_29'
+  - 11,12|香港|@ripaojiedian
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_3'
+  - 13%7CKR_speednode_0014
+  - RU_speednode_0021
+  - SG_speednode_0031
+  - RU_speednode_0025
+  - '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_5'
+  - HK_speednode_0006
+  - 13%7CSG_speednode_0030
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_32'
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_13'
+  - RU_speednode_0028
+  - 11|🇭🇰 香港6|@ripaojiedian
+  - 美国 - 西雅圖 - GTHost - 2
+  - HK_speednode_0010
+  - SG_speednode_0030
+  - TW_speednode_0033
+  - RU_speednode_0019
+  - 日本 东京Amazon数据中心
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_31'
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_9'
+  - 日本 - 东京 - Amazon Technologies Inc. - 1
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_14'
+  - 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 5
+  - 香港|@ripaojiedian
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_35'
+  - 13%7CHK_speednode_0011
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_18'
+  - 新加坡 - 新加坡 - SGP VULTR - 3
+  - 13%7CHK_speednode_0012
+  - RU_speednode_0027
+  - 13%7CRU_speednode_0017
+  - 13%7CRU_speednode_0026
+  - 13%7CUS_speednode_0036
+  - 13%7CRU_speednode_0020
+  - '%F0%9F%87%BA%F0%9F%87%A6_UA_%E4%B9%8C%E5%85%8B%E5%85%B0_15'
+  - '%F0%9F%87%B0%F0%9F%87%BF_KZ_%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6_36'
+  - 13%7CRU_speednode_0025
+  - 13%7CUS_speednode_0037
+  - 13%7CRU_speednode_0023
+  - KR_speednode_0014
+  - 13%7CRU_speednode_0021
+  - 中国 - 广州市 - Shenzhen Tencent Computer Systems Company Limited - 2
+  - 美国 - 帕萨迪纳 - Cogent Communications - 20
+  - 美国 - 波特蘭 - Amazon.com, Inc. - 6
+  - '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_24'
+  - 新加坡5|@ripaojiedian
+  - 日本 - 东京 - Amazon Technologies Inc. - 2
+  - 新加坡 - 新加坡 - Alibaba (US) Technology Co., Ltd. - 1
+  - HK_speednode_0011
+  - RU_speednode_0026
+  - '%F0%9F%87%AA%F0%9F%87%B8_ES_%E8%A5%BF%E7%8F%AD%E7%89%99_8'
+  - '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_2'
+  - HK_speednode_0007
+  - 13%7CRU_speednode_0024
+  - 13%7CSG_speednode_0031
+  - RU_speednode_0029
+  - 13%7CRU_speednode_0028
+  - '%F0%9F%87%A6%F0%9F%87%AA_AE_%E9%98%BF%E8%81%94%E9%85%8B_30'
+  - '%F0%9F%87%B1%F0%9F%87%B9_LT_%E7%AB%8B%E9%99%B6%E5%AE%9B_23'
+  - 11,12|新加坡5|@ripaojiedian
+  - 新加坡 - 新加坡 - SGP VULTR - 4
+  - TW_speednode_0032
+  - 中国 - 香港 - Antbox Networks Limited - 11
+  - 13%7CHK_speednode_0008
+  - 13%7CHK_speednode_0007
+  - HK_speednode_0009
+  - 中国 - 佛山市 - China Mobile - 6
+  - 13%7CRU_speednode_0022
+  - US_speednode_0037
+  - 13%7CRU_speednode_0018
+  - 新加坡 - 新加坡 - SGP VULTR - 5
+  - 新加坡 - 新加坡 - SGP VULTR - 7
+  - 13%7CJP_speednode_0013
+  - '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_27'
+  - 美国 - 波特蘭 - Amazon.com, Inc. - 18
+  - US_speednode_0035
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_26'
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_33'
+  type: select
+- interval: 300
+  name: 🔗 主代理 (自动测试)
+  proxies:
+  - 中国 - 北京 - Hangzhou Alibaba Advertising Co - 3
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_34'
+  - 13%7CRU_speednode_0019
+  - 香港 特别行政区
+  - JP_speednode_0013
+  - 🇭🇰 香港3|@ripaojiedian
+  - HK_speednode_0008
+  - 13%7CRU_speednode_0029
+  - 13%7CKR_speednode_0015
+  - 美国 - 波特蘭 - Amazon.com, Inc. - 5
+  - 13%7CKR_speednode_0016
+  - 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 13
+  - 中国 - 青岛市 - Hangzhou Alibaba Advertising Co - 1
+  - 13%7CUS_speednode_0035
+  - '%F0%9F%87%B7%F0%9F%87%BA_RU_%E4%BF%84%E7%BD%97%E6%96%AF%E8%81%94%E9%82%A6_10'
+  - 美国 - El Dorado Springs - Internet Numbers Authority - 21
+  - 中国 - 上海 - Hangzhou Alibaba Advertising Co - 8
+  - 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 9
+  - RU_speednode_0023
+  - '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_37'
+  - KR_speednode_0015
+  - 13%7CTW_speednode_0032
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_20'
+  - 13%7CHK_speednode_0009
+  - RU_speednode_0020
+  - 中国 V2CROSS.COM
+  - 美国 - 波特蘭 - Amazon.com, Inc. - 1
+  - RU_speednode_0024
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_28'
+  - 美国 - 里士满 - Alibaba Cloud LLC - 3
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_25'
+  - 新加坡 - 新加坡 - SGP VULTR - 6
+  - 13%7CHK_speednode_0010
+  - 中国 - 北京 - Hangzhou Alibaba Advertising Co - 7
+  - 13%7CRU_speednode_0027
+  - 香港7|@ripaojiedian
+  - 13%7CHK_speednode_0006
+  - RU_speednode_0018
+  - RU_speednode_0022
+  - 香港 Cloudie数据中心
+  - 新加坡 - 新加坡 - SGP VULTR - 8
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_6'
+  - 13%7CTW_speednode_0033
+  - 香港6|@ripaojiedian
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_11'
+  - 中国 - 香港 - Alibaba.com LLC - 10
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_17'
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_12'
+  - 美国 - 里士满 - Alibaba Cloud LLC - 4
+  - '%F0%9F%87%A7%F0%9F%87%AC_BG_%E4%BF%9D%E5%8A%A0%E5%88%A9%E4%BA%9A_16'
+  - 中国 - 杭州 - Hangzhou Alibaba Advertising Co., Ltd. - 4
+  - '%F0%9F%87%A7%F0%9F%87%AC_BG_%E4%BF%9D%E5%8A%A0%E5%88%A9%E4%BA%9A_22'
+  - 香港|@ripaojiedian
+  - 香港3|@ripaojiedian
+  - '%F0%9F%87%A8%F0%9F%87%B3_CN_%E4%B8%AD%E5%9B%BD_38'
+  - HK_speednode_0012
+  - '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_7'
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_21'
+  - US_speednode_0036
+  - RU_speednode_0017
+  - 12|香港6|@ripaojiedian
+  - KR_speednode_0016
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_4'
+  - 新加坡 - 新加坡 - SGP VULTR - 2
+  - '%F0%9F%87%AA%F0%9F%87%B8_ES_%E8%A5%BF%E7%8F%AD%E7%89%99_1'
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_19'
+  - 美国 - 洛杉矶 - Apple Network, LLC - 19
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_29'
+  - 11,12|香港|@ripaojiedian
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_3'
+  - 13%7CKR_speednode_0014
+  - RU_speednode_0021
+  - SG_speednode_0031
+  - RU_speednode_0025
+  - '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_5'
+  - HK_speednode_0006
+  - 13%7CSG_speednode_0030
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_32'
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_13'
+  - RU_speednode_0028
+  - 11|🇭🇰 香港6|@ripaojiedian
+  - 美国 - 西雅圖 - GTHost - 2
+  - HK_speednode_0010
+  - SG_speednode_0030
+  - TW_speednode_0033
+  - RU_speednode_0019
+  - 日本 东京Amazon数据中心
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_31'
+  - '%F0%9F%87%B1%F0%9F%87%BA_LU_%E5%8D%A2%E6%A3%AE%E5%A0%A1_9'
+  - 日本 - 东京 - Amazon Technologies Inc. - 1
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_14'
+  - 中国 - 香港 - Alibaba (US) Technology Co., Ltd. - 5
+  - 香港|@ripaojiedian
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_35'
+  - 13%7CHK_speednode_0011
+  - '%F0%9F%87%BA%F0%9F%87%B8_US_%E7%BE%8E%E5%9B%BD_18'
+  - 新加坡 - 新加坡 - SGP VULTR - 3
+  - 13%7CHK_speednode_0012
+  - RU_speednode_0027
+  - 13%7CRU_speednode_0017
+  - 13%7CRU_speednode_0026
+  - 13%7CUS_speednode_0036
+  - 13%7CRU_speednode_0020
+  - '%F0%9F%87%BA%F0%9F%87%A6_UA_%E4%B9%8C%E5%85%8B%E5%85%B0_15'
+  - '%F0%9F%87%B0%F0%9F%87%BF_KZ_%E5%93%88%E8%90%A8%E5%85%8B%E6%96%AF%E5%9D%A6_36'
+  - 13%7CRU_speednode_0025
+  - 13%7CUS_speednode_0037
+  - 13%7CRU_speednode_0023
+  - KR_speednode_0014
+  - 13%7CRU_speednode_0021
+  - 中国 - 广州市 - Shenzhen Tencent Computer Systems Company Limited - 2
+  - 美国 - 帕萨迪纳 - Cogent Communications - 20
+  - 美国 - 波特蘭 - Amazon.com, Inc. - 6
+  - '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_24'
+  - 新加坡5|@ripaojiedian
+  - 日本 - 东京 - Amazon Technologies Inc. - 2
+  - 新加坡 - 新加坡 - Alibaba (US) Technology Co., Ltd. - 1
+  - HK_speednode_0011
+  - RU_speednode_0026
+  - '%F0%9F%87%AA%F0%9F%87%B8_ES_%E8%A5%BF%E7%8F%AD%E7%89%99_8'
+  - '%F0%9F%87%B8%F0%9F%87%AC_SG_%E6%96%B0%E5%8A%A0%E5%9D%A1_2'
+  - HK_speednode_0007
+  - 13%7CRU_speednode_0024
+  - 13%7CSG_speednode_0031
+  - RU_speednode_0029
+  - 13%7CRU_speednode_0028
+  - '%F0%9F%87%A6%F0%9F%87%AA_AE_%E9%98%BF%E8%81%94%E9%85%8B_30'
+  - '%F0%9F%87%B1%F0%9F%87%B9_LT_%E7%AB%8B%E9%99%B6%E5%AE%9B_23'
+  - 11,12|新加坡5|@ripaojiedian
+  - 新加坡 - 新加坡 - SGP VULTR - 4
+  - TW_speednode_0032
+  - 中国 - 香港 - Antbox Networks Limited - 11
+  - 13%7CHK_speednode_0008
+  - 13%7CHK_speednode_0007
+  - HK_speednode_0009
+  - 中国 - 佛山市 - China Mobile - 6
+  - 13%7CRU_speednode_0022
+  - US_speednode_0037
+  - 13%7CRU_speednode_0018
+  - 新加坡 - 新加坡 - SGP VULTR - 5
+  - 新加坡 - 新加坡 - SGP VULTR - 7
+  - 13%7CJP_speednode_0013
+  - '%F0%9F%87%B8%F0%9F%87%A8_SC_%E5%A1%9E%E8%88%8C%E5%B0%94_27'
+  - 美国 - 波特蘭 - Amazon.com, Inc. - 18
+  - US_speednode_0035
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_26'
+  - '%F0%9F%87%AC%F0%9F%87%A7_GB_%E8%8B%B1%E5%9B%BD_33'
+  tolerance: 50
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+rules:
+- DOMAIN-SUFFIX,google.com,🚀 节点选择
+- GEOIP,CN,DIRECT
+- MATCH,🔗 主代理 (自动测试)
