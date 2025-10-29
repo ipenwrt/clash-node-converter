@@ -23,6 +23,12 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add output/
-        git diff --staged --quiet || git commit -m "更新 base64 订阅源: $(date +'%Y-%m-%d')"
+        # 强制添加 output/（忽略 .gitignore）
+        git add -f output/
+        # 检查是否有变化再 commit（避免空 commit）
+        if git diff --staged --quiet; then
+          echo "无变化，跳过 commit"
+          exit 0
+        fi
+        git commit -m "更新 base64 订阅源: $(date +'%Y-%m-%d')"
         git push
