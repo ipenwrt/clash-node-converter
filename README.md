@@ -1,1 +1,1 @@
-# clash-node-converter
+# 更新订阅说明：自动抓取当天源
