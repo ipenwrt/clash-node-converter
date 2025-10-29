@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 节点订阅源生成器：多源动态抓取 TXT → 原始链接 base64。
-支持动态日期子目录。
+支持动态日期子目录（如 wrtv sub/2510/ 用 Asia/Shanghai + 251029.txt）、固定文件（如 pdd520 nodes.txt）和 Base64 源（如 mfbpn Eterniy）。
 用法：python converter.py
 输出：output/links.b64
 """
@@ -10,7 +10,7 @@
 import base64
 import urllib.request
 from datetime import datetime, timedelta, timezone
-from zoneinfo import ZoneInfo  # 新增：时区支持 (Python 3.9+)
+from zoneinfo import ZoneInfo  # 时区支持 (Python 3.9+)
 import os
 import re  # 用于 Base64 粗检测
 
@@ -32,7 +32,6 @@ def is_base64_content(content):
 
 def get_target_date(base_url, date_offset=0):
     """根据 base_url 生成目标日期（支持特定源时区）"""
-    now = datetime.now()
     if 'sub/2510/' in base_url:  # wrtv 2510/ 用 Asia/Shanghai
         tz = ZoneInfo('Asia/Shanghai')
         tz_name = 'Asia/Shanghai'
@@ -40,7 +39,9 @@ def get_target_date(base_url, date_offset=0):
         tz = timezone.utc
         tz_name = 'UTC'
     
-    target_dt = tz.localize(now) - timedelta(days=date_offset)
+    # 直接用 datetime.now(tz) 获取时区本地时间 (aware datetime)
+    now = datetime.now(tz)
+    target_dt = now - timedelta(days=date_offset)
     date_str = target_dt.date().strftime('%y%m%d')
     return date_str, target_dt.date(), tz_name
 
@@ -54,6 +55,7 @@ def fetch_sources_from_base(base_url, max_retries=2):
         if is_fixed:
             full_url = base_url  # 直接抓取固定文件
             date_str, target_date, tz_name = 'fixed', 'fixed', 'fixed'
+            date_info = "fixed"
         else:
             date_str, target_date, tz_name = get_target_date(base_url, date_offset)
             full_url = f"{base_url.rstrip('/')}/{date_str}.txt"  # 动态拼接
