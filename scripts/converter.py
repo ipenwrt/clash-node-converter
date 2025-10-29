@@ -105,7 +105,6 @@ def main():
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(b64_links)
     print(f"Base64 生成完成: {output_file}")
-    print(f"订阅源 URL 示例: https://raw.githubusercontent.com/你的用户名/clash-node-converter/main/{output_file}")
 
 if __name__ == '__main__':
     main()
