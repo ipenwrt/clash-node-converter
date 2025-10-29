@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 节点订阅源生成器：多源动态抓取 TXT → 原始链接 base64。
-支持动态日期子目录（如 wrtv sub/2509/ + 251029.txt）和固定文件（如 pdd520 nodes.txt）。
+支持动态日期子目录。
 用法：python converter.py
 输出：output/links.b64
 """
