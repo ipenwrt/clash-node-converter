@@ -10,6 +10,7 @@
 import base64
 import urllib.request
 from datetime import datetime, timedelta, timezone
+from zoneinfo import ZoneInfo  # 新增：时区支持 (Python 3.9+)
 import os
 import re  # 用于 Base64 粗检测
 
@@ -29,13 +30,22 @@ def is_base64_content(content):
     except:
         return False
 
-def get_today_date_str():
-    """生成 %y%m%d 格式日期字符串（UTC）"""
-    today = datetime.now(timezone.utc).date()
-    return today.strftime('%y%m%d')  # 如 '251029'
+def get_target_date(base_url, date_offset=0):
+    """根据 base_url 生成目标日期（支持特定源时区）"""
+    now = datetime.now()
+    if 'sub/2510/' in base_url:  # wrtv 2510/ 用 Asia/Shanghai
+        tz = ZoneInfo('Asia/Shanghai')
+        tz_name = 'Asia/Shanghai'
+    else:  # 默认 UTC
+        tz = timezone.utc
+        tz_name = 'UTC'
+    
+    target_dt = tz.localize(now) - timedelta(days=date_offset)
+    date_str = target_dt.date().strftime('%y%m%d')
+    return date_str, target_dt.date(), tz_name
 
 def fetch_sources_from_base(base_url, max_retries=2):
-    """从单个基 URL 抓取源文件：支持固定 .txt、动态日期后缀 + Base64 自动解码"""
+    """从单个基 URL 抓取源文件：支持固定 .txt、动态日期后缀 + Base64 自动解码 + 时区优化"""
     # 判断是否固定文件名
     is_fixed = base_url.endswith('.txt')
     all_links = []
@@ -43,12 +53,11 @@ def fetch_sources_from_base(base_url, max_retries=2):
     while date_offset <= max_retries:
         if is_fixed:
             full_url = base_url  # 直接抓取固定文件
-            date_info = "fixed"
+            date_str, target_date, tz_name = 'fixed', 'fixed', 'fixed'
         else:
-            target_date = datetime.now(timezone.utc).date() - timedelta(days=date_offset)
-            date_str = target_date.strftime('%y%m%d')
+            date_str, target_date, tz_name = get_target_date(base_url, date_offset)
             full_url = f"{base_url.rstrip('/')}/{date_str}.txt"  # 动态拼接
-            date_info = f"{date_str}: {target_date}"
+            date_info = f"{date_str}: {target_date} ({tz_name})"
         
         try:
             print(f"  尝试抓取: {full_url}")
@@ -119,7 +128,9 @@ def generate_links_base64(links):
 
 def main():
     """主函数"""
-    print(f"当前日期: {get_today_date_str()}")
+    # 主日期仍用 UTC 显示（通用）
+    today_utc = datetime.now(timezone.utc).date().strftime('%y%m%d')
+    print(f"当前 UTC 日期: {today_utc}")
     links = fetch_all_sources()
     print(f"成功合并 {len(links)} 个唯一原始链接")
     
