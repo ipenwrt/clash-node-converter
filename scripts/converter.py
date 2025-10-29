@@ -9,14 +9,14 @@
 
 import base64
 import urllib.request
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone  # 新增 timezone
 import os
 
 BASE_URLS_FILE = 'sources/base-urls.txt'
 
 def get_today_date_str():
     """生成 %y%m%d 格式日期字符串（UTC）"""
-    today = datetime.utcnow().date()
+    today = datetime.now(timezone.UTC).date()
     return today.strftime('%y%m%d')  # 如 '251029'
 
 def fetch_sources_from_base(base_url, max_retries=2):
@@ -30,7 +30,7 @@ def fetch_sources_from_base(base_url, max_retries=2):
             full_url = base_url  # 直接抓取固定文件
             date_info = "fixed"
         else:
-            target_date = datetime.utcnow().date() - timedelta(days=date_offset)
+            target_date = datetime.now(timezone.UTC).date() - timedelta(days=date_offset)
             date_str = target_date.strftime('%y%m%d')
             full_url = f"{base_url.rstrip('/')}/{date_str}.txt"  # 动态拼接
             date_info = f"{date_str}: {target_date}"
@@ -61,13 +61,15 @@ def fetch_sources_from_base(base_url, max_retries=2):
 def fetch_all_sources(max_retries=2):
     """多源抓取：读取 base-urls.txt，合并所有链接（去重）"""
     if not os.path.exists(BASE_URLS_FILE):
-        raise FileNotFoundError(f"请创建 {BASE_URLS_FILE} 并添加基 URL（一行一个）")
+        print(f"警告: {BASE_URLS_FILE} 不存在！请创建并添加基 URL（一行一个）。当前无源，输出空 b64。")
+        return []  # 返回空列表，避免 raise 崩 Actions
     
     with open(BASE_URLS_FILE, 'r', encoding='utf-8') as f:
         base_urls = [line.strip() for line in f if line.strip() and not line.startswith('#')]  # 忽略空行/注释
     
     if not base_urls:
-        raise ValueError("base-urls.txt 为空，请添加至少一个基 URL")
+        print("警告: base-urls.txt 为空或仅注释，请添加至少一个基 URL。当前无源，输出空 b64。")
+        return []  # 空源也返回空
     
     all_links_set = set()  # 用 set 去重
     total_links = 0
@@ -80,7 +82,7 @@ def fetch_all_sources(max_retries=2):
     
     all_links = list(all_links_set)
     if not all_links:
-        raise ValueError("所有源抓取失败或无有效链接，请检查 base-urls.txt")
+        print("警告: 所有源抓取失败或无有效链接，输出空 b64。请检查 base-urls.txt 和源 URL。")
     
     print(f"多源合并: {total_links} 个链接 (去重后 {len(all_links)} 个)")
     return all_links
@@ -99,12 +101,12 @@ def main():
     
     os.makedirs('output', exist_ok=True)
     
-    # 生成 base64（唯一输出）
+    # 生成 base64（唯一输出，即使空）
     b64_links = generate_links_base64(links)
     output_file = 'output/links.b64'
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(b64_links)
-    print(f"Base64 生成完成: {output_file}")
+    print(f"Base64 生成完成: {output_file} (链接数: {len(links)})")
     print(f"订阅源 URL 示例: https://raw.githubusercontent.com/你的用户名/clash-node-converter/main/{output_file}")
 
 if __name__ == '__main__':
