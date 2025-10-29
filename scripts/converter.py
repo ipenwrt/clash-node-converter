@@ -11,7 +11,7 @@ import base64
 import urllib.request
 from datetime import datetime, timedelta, timezone
 import os
-import re  # 新增：用于 Base64 粗检测
+import re  # 用于 Base64 粗检测
 
 BASE_URLS_FILE = 'sources/base-urls.txt'
 
@@ -54,7 +54,7 @@ def fetch_sources_from_base(base_url, max_retries=2):
             print(f"  尝试抓取: {full_url}")
             with urllib.request.urlopen(full_url, timeout=10) as response:
                 content = response.read().decode('utf-8')
-                # 新增：Base64 检测 & 解码
+                # Base64 检测 & 解码
                 if is_base64_content(content):
                     try:
                         decoded_bytes = base64.b64decode(content.strip())
@@ -63,7 +63,7 @@ def fetch_sources_from_base(base_url, max_retries=2):
                     except Exception as decode_e:
                         print(f"  Base64 解码失败: {decode_e}，按 plain TXT 处理")
                 
-                # 过滤有效协议链接（支持常见 Clash 协议，加 ss:// 常见）
+                # 过滤有效协议链接（支持常见 Clash 协议）
                 valid_protocols = ('vmess://', 'vless://', 'hysteria2://', 'ss://', 'trojan://')
                 links = [link.strip() for link in content.split('\n') if link.strip() and any(link.startswith(proto) for proto in valid_protocols)]
                 if links:
