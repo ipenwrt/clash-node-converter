@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 节点订阅源生成器：多源动态抓取 TXT → 原始链接 base64。
-支持动态日期子目录（如 wrtv sub/2510/ 用 Asia/Shanghai + 251029.txt）、固定文件（如 pdd520 nodes.txt）和 Base64 源（如 mfbpn Eterniy）。
+支持动态日期子目录。
 用法：python converter.py
 输出：output/links.b64
 """
@@ -35,7 +35,7 @@ def get_target_date(base_url, date_offset=0):
     if 'sub/2510/' in base_url:  # wrtv 2510/ 用 Asia/Shanghai
         tz = ZoneInfo('Asia/Shanghai')
         tz_name = 'Asia/Shanghai'
-    else:  # 默认 UTC
+    else:  # 默认 UTC（其他动态源如 2509/）
         tz = timezone.utc
         tz_name = 'UTC'
     
@@ -46,17 +46,20 @@ def get_target_date(base_url, date_offset=0):
     return date_str, target_dt.date(), tz_name
 
 def fetch_sources_from_base(base_url, max_retries=2):
-    """从单个基 URL 抓取源文件：支持固定 .txt、动态日期后缀 + Base64 自动解码 + 时区优化"""
-    # 判断是否固定文件名
-    is_fixed = base_url.endswith('.txt')
+    """从单个基 URL 抓取源文件：支持固定 .txt/文件、动态日期子目录 + Base64 自动解码 + 时区优化"""
+    # 判断是否动态目录（wrtv sub/25XX/）
+    is_dynamic_dir = 'sub/25' in base_url  # 匹配 2509/2510/ 等
+    is_fixed = base_url.endswith('.txt') or not is_dynamic_dir  # .txt 或非动态 = 固定
+    
     all_links = []
     date_offset = 0
     while date_offset <= max_retries:
         if is_fixed:
-            full_url = base_url  # 直接抓取固定文件
+            full_url = base_url  # 直接抓取固定文件/URL
             date_str, target_date, tz_name = 'fixed', 'fixed', 'fixed'
             date_info = "fixed"
-        else:
+            print(f"  固定源: 直接抓取 {full_url}")
+        else:  # 动态目录
             date_str, target_date, tz_name = get_target_date(base_url, date_offset)
             full_url = f"{base_url.rstrip('/')}/{date_str}.txt"  # 动态拼接
             date_info = f"{date_str}: {target_date} ({tz_name})"
