@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 节点订阅源生成器：多源动态抓取 TXT → 原始链接 base64。
-支持未来扩展：sources/base-urls.txt 一行一个基 URL。
+支持动态日期子目录（如 wrtv sub/2509/ + 251029.txt）和固定文件（如 pdd520 nodes.txt）。
 用法：python converter.py
-输出：output/links.b64 (订阅源 URL: https://raw.../output/links.b64)
+输出：output/links.b64
 """
 
 import base64
@@ -19,23 +19,32 @@ def get_today_date_str():
     today = datetime.utcnow().date()
     return today.strftime('%y%m%d')  # 如 '251029'
 
-def fetch_sources_from_base(max_retries=2):
-    """从单个基 URL 抓取源文件：尝试当天 → 前一天，返回链接列表"""
+def fetch_sources_from_base(base_url, max_retries=2):
+    """从单个基 URL 抓取源文件：支持固定 .txt 或动态日期后缀"""
+    # 判断是否固定文件名
+    is_fixed = base_url.endswith('.txt')
     all_links = []
     date_offset = 0
     while date_offset <= max_retries:
-        target_date = datetime.utcnow().date() - timedelta(days=date_offset)
-        date_str = target_date.strftime('%y%m%d')
-        full_url = f"{base_url}{date_str}.txt"
+        if is_fixed:
+            full_url = base_url  # 直接抓取固定文件
+            date_info = "fixed"
+        else:
+            target_date = datetime.utcnow().date() - timedelta(days=date_offset)
+            date_str = target_date.strftime('%y%m%d')
+            full_url = f"{base_url.rstrip('/')}/{date_str}.txt"  # 动态拼接
+            date_info = f"{date_str}: {target_date}"
         
         try:
             print(f"  尝试抓取: {full_url}")
             with urllib.request.urlopen(full_url, timeout=10) as response:
                 content = response.read().decode('utf-8')
-                links = [link.strip() for link in content.split('\n') if link.strip() and link.startswith(('vmess://', 'vless://', 'hysteria2://'))]  # 过滤有效链接
+                # 过滤有效协议链接（支持常见 Clash 协议）
+                valid_protocols = ('vmess://', 'vless://', 'hysteria2://', 'ss://', 'trojan://')
+                links = [link.strip() for link in content.split('\n') if link.strip() and any(link.startswith(proto) for proto in valid_protocols)]
                 if links:
                     all_links.extend(links)
-                    print(f"  成功抓取 {len(links)} 个链接 (日期: {target_date})")
+                    print(f"  成功抓取 {len(links)} 个链接 ({date_info})")
                     break  # 成功后停止回退
                 else:
                     print(f"  文件为空或无有效链接，尝试前一天")
@@ -43,6 +52,9 @@ def fetch_sources_from_base(max_retries=2):
             print(f"  抓取 {full_url} 失败: {e}")
         
         date_offset += 1
+    
+    if not all_links:
+        print(f"  警告: 该源无有效链接，跳过")
     
     return all_links
 
@@ -52,22 +64,25 @@ def fetch_all_sources(max_retries=2):
         raise FileNotFoundError(f"请创建 {BASE_URLS_FILE} 并添加基 URL（一行一个）")
     
     with open(BASE_URLS_FILE, 'r', encoding='utf-8') as f:
-        base_urls = [line.strip().rstrip('/') for line in f if line.strip() and not line.startswith('#')]  # 忽略空行/注释
+        base_urls = [line.strip() for line in f if line.strip() and not line.startswith('#')]  # 忽略空行/注释
     
     if not base_urls:
         raise ValueError("base-urls.txt 为空，请添加至少一个基 URL")
     
     all_links_set = set()  # 用 set 去重
+    total_links = 0
     for base_url in base_urls:
         print(f"处理源: {base_url}")
-        links = fetch_sources_from_base(max_retries)
+        links = fetch_sources_from_base(base_url, max_retries)
         all_links_set.update(links)
-        print(f"  当前总链接数: {len(all_links_set)}")
+        total_links += len(links)
+        print(f"  当前总唯一链接数: {len(all_links_set)} (本源新增: {len(links)})")
     
     all_links = list(all_links_set)
     if not all_links:
         raise ValueError("所有源抓取失败或无有效链接，请检查 base-urls.txt")
     
+    print(f"多源合并: {total_links} 个链接 (去重后 {len(all_links)} 个)")
     return all_links
 
 def generate_links_base64(links):
